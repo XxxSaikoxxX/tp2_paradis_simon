@@ -1,4 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Votre Titre</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nb_addresses = $_POST['nb_addresses'];
 
@@ -15,3 +26,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '</form>';
 }
 ?>
+</body>
+</html>

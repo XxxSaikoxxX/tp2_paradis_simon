@@ -1,5 +1,5 @@
 <?php
-include 'connexion.php'; // Inclure le script de connexion à la base de données
+include 'connexion.php'; // Inclu le script de connexion à la base de données
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $streets = $_POST['street'];
