@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $zipcodes = $_POST['zipcode'];
 
     // Préparation de la requête pour insérer les données
-    $stmt = $conn->prepare("INSERT INTO address (street, street_nb, type, city, zipcode) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO adresse (street, street_nb, type, city, zipcode) VALUES (?, ?, ?, ?, ?)");
 
     foreach ($streets as $index => $street) {
         // Associer les paramètres
