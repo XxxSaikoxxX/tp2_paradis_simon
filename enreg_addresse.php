@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Votre Titre</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
 <?php
+
 include 'connexion.php'; // Inclu le script de connexion à la base de données
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,10 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Afficher pour vérification
         echo "Adresse " . ($index + 1) . ": Rue " . $street . ", " . $street_nbs[$index] . ", " . $types[$index] . ", " . $cities[$index] . ", " . $zipcodes[$index] . "<br>";
     }
+    
 
     // Fermeture de la requête et de la connexion
     $stmt->close();
     $conn->close();
 }
 ?>
+<a href="form_addresse.php" class="modify-button">Modifier les adresses</a>
 
+</body>
+</html>

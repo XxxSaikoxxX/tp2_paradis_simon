@@ -10,6 +10,7 @@
 
 <?php
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nb_addresses = $_POST['nb_addresses'];
 
