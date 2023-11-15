@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nb_addresses = $_POST['nb_addresses'];
 
-    echo '<form action="save_addresses.php" method="POST">';
+    echo '<form action="enreg_addresse.php" method="POST">';
     for ($i = 0; $i < $nb_addresses; $i++) {
         echo 'Adresse ' . ($i + 1) . ':<br>';
         echo 'Rue: <input type="text" name="street[]" maxlength="50"><br>';
